@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NR Photography | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <header class="home-header">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="NR Photography Logo" class="logo">
+    </div>
+    <nav>
+      <a href="HOME.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Capturing Moments that Matter</h1>
+        <p>Professional photography that tells your story beautifully.</p>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+      <h2>Who We Are</h2>
+      <p>NR Photography is dedicated to making your moments timeless through creativity, care, and artistic excellence.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Wedding Photography</li>
+        <li>Portrait Sessions</li>
+        <li>Events & Corporate</li>
+        <li>Product & Commercial</li>
+      </ul>
+      <a href="services.html" class="btn">View Services</a>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+      <h2>Featured Work</h2>
+      <div class="gallery">
+        <img src="S1.png" alt="Sample Photo 1" />
+        <img src="S2.png" alt="Sample Photo 2" />
+        <img src="s3.png" alt="Sample Photo 3" />
+      </div>
+      <a href="portfolio.html" class="btn">See Full Portfolio</a>
+    </section>
+    <script>
+        const animatedElements = document.querySelectorAll('.animate');
+      
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add(entry.target.dataset.animate);
+              entry.target.classList.remove('animate');
+            }
+          });
+        }, { threshold: 0.2 });
+      
+        animatedElements.forEach(el => observer.observe(el));
+      </script>
+      <!-- Book a Photoshoot Section -->
+<section class="book-photoshoot slide-up animate" data-animate="slide-up">
+    <h2>Ready to Book Your Photoshoot?</h2>
+    <p>We’d love to capture your special moments. Get in touch to book a session today!</p>
+    <a href="contact.html" class="btn book-btn">Book Now</a>
+  </section>
+  
+</main>
+
+  <footer>
+    <p>&copy; 2025 NR Photography. All rights reserved.</p>
+  </footer>
+</body>
+</html>

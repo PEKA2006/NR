@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('S4.png') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+  }
+  
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-preview,
+  .services-preview,
+  .gallery-preview {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .services-preview ul {
+    list-style-type: none;
+    margin: 20px 0;
+  }
+  
+  .services-preview li {
+    margin-bottom: 10px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* Default hidden state */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+  }
+  
+  /* Animation when visible */
+  .slide-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Optional: stagger animations */
+  .about-preview {
+    transition-delay: 0.2s;
+  }
+  .services-preview {
+    transition-delay: 0.4s;
+  }
+  .gallery-preview {
+    transition-delay: 0.6s;
+  }
+  /* Animation base styles */
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .slide-up {
+    animation: slideUp 1.5s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Smooth hover for buttons and nav */
+  nav a, .btn {
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover, .btn:hover {
+    color: #c8955f;
+    transform: scale(1.05);
+  }
+  .book-photoshoot {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .book-photoshoot h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .book-photoshoot p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .book-btn {
+    background-color: #c8955f;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #a47140;
+  }
+  /* Home Page Header Styling */
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  background-color: #222;
+}
+
+.home-header .logo-container {
+  flex-shrink: 0;
+}
+
+.home-header .logo {
+  height: 60px;
+  width: auto;
+}
+
+.home-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.home-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}

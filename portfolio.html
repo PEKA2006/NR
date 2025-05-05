@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | NR Photography</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="NR Photography Logo" class="logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio">
+      <h1>See Our Awesome Work!</h1>
+
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="portrait">Portraits & Headshots</button>
+        <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="group">Group</button>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery">
+        <img src="assets/portrait1.jpg" class="photo portrait" alt="Portrait 1" />
+        <img src="assets/portrait2.jpg" class="photo portrait" alt="Portrait 2" />
+        <img src="assets/lifestyle1.jpg" class="photo lifestyle" alt="Lifestyle 1" />
+        <img src="assets/lifestyle2.jpg" class="photo lifestyle" alt="Lifestyle 2" />
+        <img src="assets/group1.jpg" class="photo group" alt="Group 1" />
+        <img src="assets/group2.jpg" class="photo group" alt="Group 2" />
+      </div>
+    </section>
+    <!-- Book a Photoshoot Section -->
+<section class="book-photoshoot slide-up animate" data-animate="slide-up">
+  <h2>Ready to Book Your Photoshoot?</h2>
+  <p>We’d love to capture your special moments. Get in touch to book a session today!</p>
+  <a href="contact.html" class="btn book-btn">Book Now</a>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NR Photography. All rights reserved.</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
